@@ -135,7 +135,7 @@ class _TopBarContentsState extends State<TopBarContents> {
                     textStyle: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
-                        color: Colorses.secondery))
+                        color: Colorses.white))
                 ),
                 SizedBox(width: screenSize.width / 15),
                 Text(
@@ -144,7 +144,7 @@ class _TopBarContentsState extends State<TopBarContents> {
                     textStyle: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
-                        color: Colorses.secondery)
+                        color: Colorses.white)
                   ),
                 ),
                 SizedBox(width: screenSize.width / 15),
@@ -154,7 +154,7 @@ class _TopBarContentsState extends State<TopBarContents> {
                     textStyle: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
-                        color: Colorses.secondery)
+                        color: Colorses.white)
                   ),
                 ),
                 SizedBox(width: screenSize.width / 15),
@@ -164,7 +164,7 @@ class _TopBarContentsState extends State<TopBarContents> {
                     textStyle: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
-                        color: Colorses.secondery)
+                        color: Colorses.white)
                   ),
                 ),
                 SizedBox(width: screenSize.width / 15),

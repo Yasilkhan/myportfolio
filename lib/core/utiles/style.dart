@@ -6,7 +6,7 @@ ButtonStyle borderedButtonStyle = ButtonStyle(
     elevation: MaterialStateProperty.all(0),
     backgroundColor: MaterialStateProperty.all(Colors.white),
     shape: MaterialStateProperty.all(RoundedRectangleBorder(
-      side: BorderSide(color: Colorses.secondery),
+      side: BorderSide(color: Colorses.secondary),
       borderRadius: BorderRadius.circular(10),
     )));
 

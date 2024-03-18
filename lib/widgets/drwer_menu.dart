@@ -13,9 +13,9 @@ class MenuDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Drawer(
       
-      backgroundColor: Colorses.secondery,
+      backgroundColor: Colorses.white,
       child: Container(
-        color: Colorses.primeryColor,
+        color: Colorses.primary,
         child: Padding(
           padding: const EdgeInsets.all(13.0),
           child: Column(
@@ -30,10 +30,10 @@ class MenuDrawer extends StatelessWidget {
                     textStyle: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
-                        color: Colorses.secondery)),
+                        color: Colorses.white)),
               ),
               SizedBox(height: h*0.03,),
-              Divider(color: Colorses.secondery,),
+              Divider(color: Colorses.white,),
               SizedBox(height: h*0.03,),
               Text(
                 "About Us",
@@ -41,10 +41,10 @@ class MenuDrawer extends StatelessWidget {
                     textStyle: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
-                        color: Colorses.secondery)),
+                        color: Colorses.white)),
               ),
               SizedBox(height: h*0.03,),
-              Divider(color: Colorses.secondery,),
+              Divider(color: Colorses.white,),
               SizedBox(height: h*0.03,),
               Text(
                 "Gallery",
@@ -52,10 +52,10 @@ class MenuDrawer extends StatelessWidget {
                     textStyle: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
-                        color: Colorses.secondery)),
+                        color: Colorses.white)),
               ),
               SizedBox(height: h*0.03,),
-              Divider(color: Colorses.secondery,),
+              Divider(color: Colorses.white,),
               SizedBox(height: h*0.03,),
               Text(
                 "Contact",
@@ -63,9 +63,9 @@ class MenuDrawer extends StatelessWidget {
                     textStyle: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
-                        color: Colorses.secondery)),
+                        color: Colorses.white)),
               ),
-                Divider(color: Colorses.secondery,),
+                Divider(color: Colorses.white,),
               Expanded(
                 child: Align(
                   alignment: Alignment.bottomCenter,
