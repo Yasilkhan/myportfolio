@@ -7,6 +7,7 @@ double w = 0.0;
 const AssetImage logo = AssetImage('assets/2359094.jpg');
 const AssetImage profileImage = AssetImage('assets/mainphoto.png');
 String frondImage = "assets/mainphoto.png";
+String secondPhoto ="assets/successful-handsome-business-man-office.jpg";
 // const String aboutContent = 
 //     "As an enthusiastic and self-motivated professional, I thrive in challenging situations, showcasing "
 //    "adaptability and maturity as a team player. \n       With a proven track record of reliability and responsibility',"

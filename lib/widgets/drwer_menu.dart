@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio/core/colors.dart';
 import 'package:portfolio/core/costant.dart';
+import 'package:portfolio/core/utiles/responsiveLayout.dart';
 
 
 class MenuDrawer extends StatelessWidget {
@@ -11,7 +12,7 @@ class MenuDrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Drawer(
+    return ResponsiveWidget.isSmallScreen(context)?Drawer(
       
       backgroundColor: Colorses.white,
       child: Container(
@@ -82,6 +83,6 @@ class MenuDrawer extends StatelessWidget {
           ),
         ),
       ),
-    );
+    ):SizedBox();
   }
 }

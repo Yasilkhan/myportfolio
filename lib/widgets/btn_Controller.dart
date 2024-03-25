@@ -89,18 +89,24 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio/core/colors.dart';
+import 'package:portfolio/core/costant.dart';
+import 'package:portfolio/screen/aboutUs.dart';
+import 'package:portfolio/screen/projects.dart';
 
 
 
 
 class TopBarContents extends StatefulWidget {
 
-  TopBarContents();
+  const TopBarContents({super.key});
 
   @override
   _TopBarContentsState createState() => _TopBarContentsState();
 }
-
+final homeSection = GlobalKey();
+final aboutSection = GlobalKey();
+final servicesSection = GlobalKey();
+final projectsSection = GlobalKey();
 class _TopBarContentsState extends State<TopBarContents> {
   final List _isHovering = [
     false,
@@ -112,6 +118,14 @@ class _TopBarContentsState extends State<TopBarContents> {
     false,
     false
   ];
+
+  void scrollToSection (GlobalKey key){
+    Scrollable.ensureVisible(
+      key.currentContext!,
+      duration:  Duration(microseconds: 10),
+      curve: Curves.easeInOut
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -129,32 +143,47 @@ class _TopBarContentsState extends State<TopBarContents> {
             SizedBox(width: screenSize.width / 15),
             Row(
               children: [
-                Text(
-                  'Home',
-                  style: GoogleFonts.montserrat(
-                    textStyle: TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.bold,
-                        color: Colorses.white))
-                ),
-                SizedBox(width: screenSize.width / 15),
-                Text(
-                  'About us',
-                 style: GoogleFonts.montserrat(
-                    textStyle: TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.bold,
-                        color: Colorses.white)
+                InkWell(
+                  onTap: () {
+                    scrollToSection(homeSection);
+                  },
+                  child: Text(
+                    'Home',
+                    style: GoogleFonts.montserrat(
+                      textStyle: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                          color: Colorses.white))
                   ),
                 ),
                 SizedBox(width: screenSize.width / 15),
-                Text(
-                  'Gallery',
-                  style:  GoogleFonts.montserrat(
-                    textStyle: TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.bold,
-                        color: Colorses.white)
+                InkWell(
+                  onTap: () {
+                   scrollToSection(aboutSection);
+                  },
+                  child: Text(
+                    'About us',
+                   style: GoogleFonts.montserrat(
+                      textStyle: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                          color: Colorses.white)
+                    ),
+                  ),
+                ),
+                SizedBox(width: screenSize.width / 15),
+                InkWell(
+                  onTap: () {
+                    scrollToSection(servicesSection);
+                  },
+                  child: Text(
+                    'Gallery',
+                    style:  GoogleFonts.montserrat(
+                      textStyle: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                          color: Colorses.white)
+                    ),
                   ),
                 ),
                 SizedBox(width: screenSize.width / 15),

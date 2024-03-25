@@ -8,6 +8,6 @@ class Colorses{
   static Color white = Colors.white;
   static MaterialColor myColor = Colors.blue;
   static Color text = Colors.yellow.shade900;
-  static MaterialColor iconColor = Colors.grey;
+  static MaterialColor text2 = Colors.grey;
   static Color secondary = const Color.fromRGBO(199, 236, 238,1.0);
 }

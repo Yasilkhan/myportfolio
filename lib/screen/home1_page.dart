@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio/core/colors.dart';
+import 'package:portfolio/screen/home_page.dart';
 
 
 import '../core/costant.dart';
@@ -15,8 +16,10 @@ class Home1Page extends StatelessWidget {
   Widget build(BuildContext context) {
     return ResponsiveWidget.isSmallScreen(context)
         ? Padding(
+
             padding: const EdgeInsets.all(8.0),
             child: Container(
+
                 height: w * 2.2,
                 width: w * 1,
                 child: Column(
@@ -83,6 +86,7 @@ class Home1Page extends StatelessWidget {
                 )),
           )
         : Container(
+      key: homeSection,
             height: h * 1,
             width: w * 1,
             decoration: BoxDecoration(
